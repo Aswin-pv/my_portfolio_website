@@ -4,6 +4,7 @@
     ---primary-color: #a7d129;
     --secondary-color: #616f39;
     --tertiary-color: #3e432e;
+    --grey-color: #61677a;
 }
 * {
     padding: 0;
@@ -48,7 +49,6 @@ body {
 .main {
     background-color: var(--bg-color);
     width: 100%;
-    height: 100vh;
 }
 .main h5 {
     color: var(--text-color);
@@ -97,17 +97,14 @@ body {
     border-radius: 50%;
 }
 
-
-.main .icons li{
+.main .icons li {
     list-style-type: none;
     color: var(--text-color);
-    
 }
-.main .icons li svg{
+.main .icons li svg {
     cursor: pointer;
-    
 }
-.main .icons li svg:hover{
+.main .icons li svg:hover {
     cursor: pointer;
     color: var(---primary-color);
     transform: scale(1.3);
@@ -124,16 +121,15 @@ body {
     -webkit-box-shadow: 16px -3px 6px -11px rgba(167, 209, 41, 0.61);
     -moz-box-shadow: 16px -3px 6px -11px rgba(167, 209, 41, 0.61);
     box-shadow: 16px -3px 6px -11px rgba(167, 209, 41, 0.61);
-    
 }
 
-.about .about-head{
+.about .about-head {
     font-size: 3rem;
     font-weight: 900;
     color: var(---primary-color);
 }
 
-.about .about-sub-head{
+.about .about-sub-head {
     font-size: 1.3rem;
     font-weight: 900;
     color: var(--secondary-color);
@@ -156,3 +152,35 @@ body {
     border-radius: 0px;
     background: var(---primary-color);
 }
+
+/* SKILLS SECTION */
+
+.card {
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+}
+.card:hover{
+    -webkit-box-shadow: 16px -3px 34px -5px rgba(167,209,41,0.71);
+    -moz-box-shadow: 16px -3px 34px -5px rgba(167,209,41,0.71);
+    box-shadow: 16px -3px 34px -5px rgba(167,209,41,0.71);
+}
+
+.skills {
+    background-color: var(--bg-color);
+    color: var(--bg-color);
+}
+.skills .skill-head {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(---primary-color);
+}
+
+.card .card-body p {
+    color: var(--grey-color);
+}
+
+.card-icons:hover{
+    background-color: var(---primary-color);
+    transition: 0.5s ease;
+}
+
