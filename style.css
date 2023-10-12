@@ -179,9 +179,10 @@ body {
 /* SKILLS SECTION */
 
 .card {
-    background-color: var(--tertiary-color);
     cursor: pointer;
+    color: var(--bg-color);
 }
+
 .card:hover {
     -webkit-box-shadow: 10px 10px 15px -10px rgba(255, 255, 255, 1);
     -moz-box-shadow: 10px 10px 15px -10px rgba(255, 255, 255, 1);
@@ -198,14 +199,20 @@ body {
     color: var(--primary-color);
 }
 
+.card-icons{
+    background-color: var(--bg-color);
+}
+
 .card .card-body p {
     color: var(--grey-color);
 }
 
 .card-icons:hover {
     background-color: var(--primary-color);
+    color: var(--bg-color);
     transition: 0.5s ease;
 }
+
 
 /* PORTFOLIO SECTION */
 
@@ -219,15 +226,6 @@ body {
     color: var(--primary-color);
 }
 
-.control ul li {
-    list-style: none;
-    background-color: var(--text-color);
-    padding: 2px 15px;
-    color: var(--bg-color);
-    cursor: pointer;
-    display: inline-block;
-}
-
 .portfolio .card .card-body h5 {
     color: var(--bg-color);
 }
@@ -235,12 +233,8 @@ body {
     color: var(--grey-color);
 }
 
-.portfolio-card {
-    display: none;
-}
-
-.list-group {
-    display: none;
+.portfolio .stack svg{
+    fill:var(--bg-color)
 }
 
 .card-body .btn {
@@ -272,6 +266,8 @@ body {
     text-decoration: none;
     color: var(--bg-color);
 }
+
+
 
 /* CONTACT SECTION */
 
