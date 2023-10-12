@@ -1,7 +1,7 @@
 :root {
     --bg-color: #000;
     --text-color: #fff;
-    ---primary-color: #a7d129;
+    --primary-color: #a7d129;
     --secondary-color: #616f39;
     --tertiary-color: #3e432e;
     --grey-color: #61677a;
@@ -36,7 +36,7 @@ body {
 .navbar-nav .nav-link:hover {
     cursor: pointer;
     color: var(--bg-color);
-    background-color: var(---primary-color);
+    background-color: var(--primary-color);
 }
 
 .navbar-logo {
@@ -62,7 +62,7 @@ body {
 .main h3 span {
     font-size: 4.4rem;
     font-weight: 600;
-    color: var(---primary-color);
+    color: var(--primary-color);
 }
 
 .main h6 {
@@ -75,21 +75,32 @@ body {
 }
 
 .main .btn {
-    outline: 1px solid var(---primary-color);
+    outline: 1px solid var(--primary-color);
     color: var(--text-color);
     border-radius: 0px;
 }
+
 .main .btn:focus {
-    outline: 1px solid var(---primary-color);
+    outline: 1px solid var(--primary-color);
     color: var(--text-color);
     border-radius: 0px;
 }
 
 .main .btn:hover {
-    outline: 1px solid var(---primary-color);
+    outline: 1px solid var(--primary-color);
     color: var(--bg-color);
     border-radius: 0px;
-    background: var(---primary-color);
+    background: var(--primary-color);
+}
+.main .btn:active {
+    outline: 1px solid var(--primary-color);
+    color: var(--bg-color);
+    border-radius: 0px;
+    background: var(--primary-color);
+}
+.main .btn a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .main img {
@@ -106,7 +117,7 @@ body {
 }
 .main .icons li svg:hover {
     cursor: pointer;
-    color: var(---primary-color);
+    color: var(--primary-color);
     transform: scale(1.3);
 }
 
@@ -126,7 +137,7 @@ body {
 .about .about-head {
     font-size: 3rem;
     font-weight: 900;
-    color: var(---primary-color);
+    color: var(--primary-color);
 }
 
 .about .about-sub-head {
@@ -136,21 +147,21 @@ body {
 }
 
 .about .btn {
-    outline: 1px solid var(---primary-color);
+    outline: 1px solid var(--primary-color);
     color: var(--text-color);
     border-radius: 0px;
 }
 
 .about .btn:focus {
-    outline: 1px solid var(---primary-color);
+    outline: 1px solid var(--primary-color);
     color: var(--text-color);
     border-radius: 0px;
 }
 .about .btn:hover {
-    outline: 1px solid var(---primary-color);
+    outline: 1px solid var(--primary-color);
     color: var(--bg-color);
     border-radius: 0px;
-    background: var(---primary-color);
+    background-color: var(--primary-color);
 }
 
 /* SKILLS SECTION */
@@ -159,10 +170,10 @@ body {
     background-color: var(--tertiary-color);
     cursor: pointer;
 }
-.card:hover{
-    -webkit-box-shadow: 16px -3px 34px -5px rgba(167,209,41,0.71);
-    -moz-box-shadow: 16px -3px 34px -5px rgba(167,209,41,0.71);
-    box-shadow: 16px -3px 34px -5px rgba(167,209,41,0.71);
+.card:hover {
+    -webkit-box-shadow: 10px 10px 15px -10px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 10px 10px 15px -10px rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 15px -10px rgba(255, 255, 255, 1);
 }
 
 .skills {
@@ -172,15 +183,80 @@ body {
 .skills .skill-head {
     font-size: 3rem;
     font-weight: 900;
-    color: var(---primary-color);
+    color: var(--primary-color);
 }
 
 .card .card-body p {
     color: var(--grey-color);
 }
 
-.card-icons:hover{
-    background-color: var(---primary-color);
+.card-icons:hover {
+    background-color: var(--primary-color);
     transition: 0.5s ease;
 }
 
+/* PORTFOLIO SECTION */
+
+.portfolio {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.portfolio h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.control ul li {
+    list-style: none;
+    background-color: var(--text-color);
+    padding: 2px 15px;
+    color: var(--bg-color);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.portfolio .card .card-body h5 {
+    color: var(--bg-color);
+}
+.portfolio .card .card-body p {
+    color: var(--grey-color);
+}
+
+.portfolio-card {
+    display: none;
+}
+
+.list-group {
+    display: none;
+}
+
+.card-body .btn {
+    outline: 1px solid var(--primary-color);
+    color: var(--bg-color);
+    border-radius: 0px;
+    background-color: var(--primary-color);
+}
+
+.card-body .btn:focus {
+    outline: 1px solid var(--primary-color);
+    color: var(--text-color);
+    border-radius: 0px;
+}
+.card-body .btn:hover {
+    outline: 1px solid var(--primary-color);
+    color: var(--bg-color);
+    border-radius: 0px;
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+.card-body .btn:active {
+    color: var(--bg-color);
+    border-radius: 0px;
+    background: var(--primary-color);
+}
+
+.card-body .btn a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
