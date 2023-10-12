@@ -43,16 +43,16 @@ body {
     height: 2rem;
     width: 100%;
 }
-
+.navbar-toggler-icon {
+    color: var(--text-color);
+}
 /* MAIN SECTION */
 
 .main {
     background-color: var(--bg-color);
-<<<<<<< HEAD
-=======
-    width: 100%;
->>>>>>> parent of 91f2c93 (scrollbar)
+    margin-top: 70px;
 }
+
 .main h5 {
     color: var(--text-color);
 }
@@ -81,6 +81,7 @@ body {
     outline: 1px solid var(--primary-color);
     color: var(--text-color);
     border-radius: 0px;
+    transition: 0.5s ease;
 }
 
 .main .btn:focus {
@@ -94,6 +95,7 @@ body {
     color: var(--bg-color);
     border-radius: 0px;
     background: var(--primary-color);
+    transform: scale(1.1);
 }
 .main .btn:active {
     outline: 1px solid var(--primary-color);
@@ -153,6 +155,7 @@ body {
     outline: 1px solid var(--primary-color);
     color: var(--text-color);
     border-radius: 0px;
+    transition: 0.5s ease;
 }
 
 .about .btn:focus {
@@ -165,6 +168,7 @@ body {
     color: var(--bg-color);
     border-radius: 0px;
     background-color: var(--primary-color);
+    transform: scale(1.1);
 }
 
 /* SKILLS SECTION */
@@ -262,4 +266,64 @@ body {
 .card-body .btn a {
     text-decoration: none;
     color: var(--bg-color);
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    background-color: #000;
+    color: var(--text-color);
+}
+
+.contact h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.contact h5 {
+    color: var(--secondary-color);
+}
+.contact p a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.ct-button .btn3 {
+    outline: 2px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.5s ease;
+}
+.ct-button .btn3:hover {
+    outline: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
+
+
+
+/* SCROLLBAR  */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3e432e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+    .main img {
+        height: 250px;
+        border-radius: 50%;
+    }
+    .navbar-logo {
+        height: 1.5rem;
+        width: 100%;
+    }
 }
