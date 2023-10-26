@@ -82,36 +82,32 @@ body {
     width: 50%;
 }
 
-.main .btn {
-    outline: 1px solid var(--primary-color);
-    color: var(--text-color);
-    border-radius: 0px;
-    transition: 0.5s ease;
-}
 
-.main .btn:focus {
-    outline: 1px solid var(--primary-color);
-    color: var(--text-color);
-    border-radius: 0px;
-}
-
-.main .btn:hover {
-    outline: 1px solid var(--primary-color);
-    color: var(--bg-color);
-    border-radius: 0px;
-    background: var(--primary-color);
-    transform: scale(1.1);
-}
-.main .btn:active {
-    outline: 1px solid var(--primary-color);
-    color: var(--bg-color);
-    border-radius: 0px;
-    background: var(--primary-color);
-}
-.main .btn a {
+.main .hire-btn{
     text-decoration: none;
+    padding: .6rem 2em;
+    background-color: var(--bg-color);
     color: var(--text-color);
+    border:1px solid var(--primary-color);
+    transition: 0.3s ease-in;
 }
+
+.main .hire-btn:hover{
+    padding: .8rem 2em;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border:1px solid var(--primary-color);
+    scale: 1.1;
+    
+    
+}
+.main .hire-btn:active{
+    padding: .8rem 2em;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border:1px solid var(--primary-color)
+}
+
 
 .main img {
     height: 400px;
@@ -156,25 +152,32 @@ body {
     color: var(--secondary-color);
 }
 
-.about .btn {
-    outline: 1px solid var(--primary-color);
+.about .cv-btn{
+    text-decoration: none;
+    padding: .6rem 2em;
+    background-color: var(--bg-color);
     color: var(--text-color);
-    border-radius: 0px;
-    transition: 0.5s ease;
+    border:1px solid var(--primary-color);
+    transition: 0.3s ease-in;
 }
 
-.about .btn:focus {
-    outline: 1px solid var(--primary-color);
-    color: var(--text-color);
-    border-radius: 0px;
-}
-.about .btn:hover {
-    outline: 1px solid var(--primary-color);
-    color: var(--bg-color);
-    border-radius: 0px;
+.about .cv-btn:hover{
+    padding: .8rem 2em;
     background-color: var(--primary-color);
-    transform: scale(1.1);
+    color: var(--bg-color);
+    border:1px solid var(--primary-color);
+    scale: 1.1;
+    
+    
 }
+.about .cv-btn:active{
+    padding: .8rem 2em;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border:1px solid var(--primary-color)
+}
+
+
 
 /* SKILLS SECTION */
 
@@ -205,6 +208,8 @@ body {
 
 .card .card-body p {
     color: var(--grey-color);
+    height: 150px;
+    overflow-y: scroll;
 }
 
 .card-icons:hover {
