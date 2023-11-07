@@ -178,6 +178,10 @@ body {
     border:1px solid var(--primary-color)
 }
 
+.about .about-me{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
 
 
 /* SKILLS SECTION */
@@ -403,6 +407,11 @@ body {
         width: 100%;
     }
     .sidebar{
-        display: none;
+        width: 30px;
     }
+    .about .about-me{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    
 }
