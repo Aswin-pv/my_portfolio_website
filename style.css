@@ -56,7 +56,6 @@ body {
 .main {
     background-color: var(--bg-color);
     margin-top: 70px;
-
 }
 
 .main h5 {
@@ -382,6 +381,10 @@ body {
 }
 
 @media (max-width:767px){
+
+    .main h5 {
+        font-size: 1rem;
+    }
     .main h3 {
         font-size: 3rem;
         font-weight: 600;
@@ -398,6 +401,21 @@ body {
 
 
 @media (max-width: 480px) {
+
+
+    .main h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        
+    }
+    .main h3 span {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .main h6 {
+        font-size: 1.2rem;
+    }
     .main img {
         height: 300px;
         border-radius: 50%;
@@ -410,8 +428,20 @@ body {
         width: 30px;
     }
     .about .about-me{
-        font-size: 1.2rem;
-        line-height: 2.5rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
-    
+    .main {
+        
+        margin-top: 20px;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .contact h5 {
+        font-size: 1rem;
+    }
+    .contact p a {
+        font-size: .9rem;
+    }
 }
