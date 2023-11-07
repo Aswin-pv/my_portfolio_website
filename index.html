@@ -79,10 +79,13 @@
 
         <!--MAIN SECTION-->
 
-        <section class="main py-2" id="main-id">
+        <section class="main py-3">
             <div class="container py-4">
                 <div class="row py-5">
-                    <div class="col-lg-6 py-5">
+                    <div class="col-lg-6 text-center py-5 order-lg-2 order-md-1" id="main-id">
+                        <img src="./images/aswin dp.jpg" class="mx-auto" />
+                    </div>
+                    <div class="col-lg-6 py-5 order-lg-1 order-md-2 main-head">
                         <h5>Hey There!</h5>
                         <h3>I am <span>Aswin pv</span></h3>
                         <h6>Full Stack Web developer</h6>
@@ -153,9 +156,7 @@
                         </ul>
                         <a class="hire-btn" href="mailto:pvaswin888@gmail.com">Hire Me</a>
                     </div>
-                    <div class="col-lg-6 text-center py-5">
-                        <img src="./images/aswin dp.jpg" class="mx-auto" />
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -684,7 +685,7 @@
                                     ></span>
                                 </div>
                                 <h5>Contact</h5>
-                                <p><a href="">67389323455</a></p>
+                                <p><a href="">6238366862</a></p>
                             </div>
                         </div>
                     </div>
@@ -692,22 +693,22 @@
                 <div class="row">
                     <div class="col-lg-9 mx-auto">
                         <!--EMAIL FORM-->
-                        <form action="">
+                        <form action="https://formsubmit.co/pvaswinofficial888@gmail.com" method="post">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" id="name" class="form-control rounded-0 bg-light mb-3" placeholder="Your Name" required />
+                                    <input type="text" name="name" class="form-control rounded-0 bg-light mb-3" placeholder="Your Name" required autocomplete="off"/>
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" id="email" class="form-control rounded-0 bg-light mb-3" placeholder="Email" required />
+                                    <input type="text" name="email" class="form-control rounded-0 bg-light mb-3" placeholder="Email" required autocomplete="off" />
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-lg-12 mb-5">
                                     <textarea
-                                        name=""
+                                        name="message"
                                         class="form-control rounded-0 bg-light"
                                         placeholder="Message"
-                                        id="message"
+                    
                                         cols="30"
                                         rows="10"
                                         required
@@ -715,7 +716,7 @@
                                 </div>
                             </div>
                             <div class="ct-button d-flex justify-content-center">
-                                <button class="btn3 border-0 px-4 py-2">Send</button>
+                                <button type="submit" class="btn3 border-0 px-4 py-2">Send</button>
                             </div>
                         </form>
                     </div>

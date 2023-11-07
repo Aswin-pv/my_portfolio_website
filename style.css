@@ -56,6 +56,7 @@ body {
 .main {
     background-color: var(--bg-color);
     margin-top: 70px;
+
 }
 
 .main h5 {
@@ -306,6 +307,12 @@ body {
     color: var(--bg-color);
     transform: scale(1.1);
 }
+.ct-button .btn3:active {
+    outline: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
 
 /* SIDEBAR */
 .sidebar {
@@ -355,9 +362,40 @@ body {
     background-color: var(--primary-color);
 }
 
+
+@media (max-width:992px){
+
+    .navbar-nav .nav-item{
+        display: flex;
+        justify-content: center;
+        margin: 5px 0 5px 0;
+    }
+    .navbar-nav .nav-item:hover{
+        background-color: var(--primary-color);
+        color: var(--bg-color);
+    }
+    
+}
+
+@media (max-width:767px){
+    .main h3 {
+        font-size: 3rem;
+        font-weight: 600;
+        
+    }
+    .main h3 span {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .main-head{
+        padding-left: 30px;
+    }
+}
+
+
 @media (max-width: 480px) {
     .main img {
-        height: 250px;
+        height: 300px;
         border-radius: 50%;
     }
     .navbar-logo {
